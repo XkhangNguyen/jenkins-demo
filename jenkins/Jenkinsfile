@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage('Set up'){
+            steps {
+                sh 'sudo yum install nodejs'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
