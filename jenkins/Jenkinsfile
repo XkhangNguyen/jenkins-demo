@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Set up'){
             steps {
-                sh 'sudo yum install nodejs'
+                sh 'sudo yum install nodejs -y'
             }
         }
         stage('Build') {
